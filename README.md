@@ -7,6 +7,12 @@
 Yuan Zhang, Pengfei Wan, Zhongyuan Wang and 
 [Yu Wu](https://scholar.google.com/citations?hl=zh-CN&user=23SZHUwAAAAJ)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dvis-improved-decoupled-framework-for/video-instance-segmentation-on-ovis-1)](https://paperswithcode.com/sota/video-instance-segmentation-on-ovis-1?p=dvis-improved-decoupled-framework-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dvis-improved-decoupled-framework-for/video-instance-segmentation-on-youtube-vis-1)](https://paperswithcode.com/sota/video-instance-segmentation-on-youtube-vis-1?p=dvis-improved-decoupled-framework-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dvis-improved-decoupled-framework-for/video-instance-segmentation-on-youtube-vis-2)](https://paperswithcode.com/sota/video-instance-segmentation-on-youtube-vis-2?p=dvis-improved-decoupled-framework-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dvis-improved-decoupled-framework-for/video-instance-segmentation-on-youtube-vis-3)](https://paperswithcode.com/sota/video-instance-segmentation-on-youtube-vis-3?p=dvis-improved-decoupled-framework-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dvis-improved-decoupled-framework-for/video-semantic-segmentation-on-vspw)](https://paperswithcode.com/sota/video-semantic-segmentation-on-vspw?p=dvis-improved-decoupled-framework-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dvis-improved-decoupled-framework-for/video-panoptic-segmentation-on-vipseg)](https://paperswithcode.com/sota/video-panoptic-segmentation-on-vipseg?p=dvis-improved-decoupled-framework-for)
 
 <img src="https://github.com/zhang-tao-whu/paper_images/blob/master/dvis_Plus/radar.png" width="400"/>
 <img src="https://github.com/zhang-tao-whu/paper_images/blob/master/dvis_Plus/radar_ov.png" width="400"/>

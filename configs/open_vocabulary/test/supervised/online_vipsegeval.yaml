@@ -1,0 +1,17 @@
+_BASE_: ../../DVIS_Online_supervised_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_online_OV"
+  MASK_FORMER:
+    TRANSFORMER_DECODER_NAME: "VideoMultiScaleMaskedTransformerDecoder_dvis_OV"
+    TEST:
+      TASK: 'vps'
+  TRACKER:
+    NOISE_MODE: "wa"
+
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_panoptic',]
+  TEST: ("panoVSPW_vps_video_val_ov",)
+  TEST2TRAIN: ["panoVSPW_vps_video_train_ov",]
+
+OUTPUT_DIR: './online_supervised_vipseg'

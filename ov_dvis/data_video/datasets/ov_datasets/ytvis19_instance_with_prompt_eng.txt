@@ -1,0 +1,41 @@
+0:invalid_class_id
+1:person,child,girl,boy,woman,man,people,children,girls,boys,women,men,lady,guy,ladies,guys,clothes
+2:giant_panda,panda,ailuropoda melanoleuca,panda bear
+3:lizard,saurian,iguana,gecko
+4:parrot,macaw,cockatoo,lovebird,budgie
+5:skateboard
+6:sedan,car,cars,automobile,saloon car,cruiser,compact,coupe
+7:ape,gorilla,chimpanzee,orangutan
+8:dog,canine,puppy,hound,mutt,hound,pooch,fido,doggy
+9:snake,serpent,viper,cobra,adder,anaconda,python,boa,asp,rattlesnake
+10:monkey,monkeys
+11:hand,palm,fist,grip
+12:rabbit,bunny,hare,cony
+13:duck,drake,mallard
+14:cat,cats,kitty,tomcat
+15:cow,bull
+16:fish,piscine
+17:train,locomotive
+18:horse,equine,stallion,mare
+19:turtle,tortoise,terrapin,chelonian
+20:bear,bruin,ursine,grizzly
+21:motorbike,motorcycle,motorcycles
+22:giraffe,camelopard,longneck
+23:leopard,panther,jaguar
+24:fox,vixen,reynard
+25:deer,buck,doe,hart
+26:owl
+27:surfboard
+28:airplane,aeroplane,plane,jet
+29:truck,lorry,hgv
+30:zebra,stripedhorse
+31:tiger
+32:elephant
+33:snowboard
+34:boat,vessel,craft,ship
+35:shark,selachimorpha,greatwhite
+36:mouse,rat,murine
+37:frog,toad
+38:eagle,aquila
+39:earless_seal,earless seal,seal
+40:tennis_racket,tennis racket,racquet

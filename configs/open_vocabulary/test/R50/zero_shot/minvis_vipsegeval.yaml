@@ -1,0 +1,11 @@
+_BASE_: ../../../R50/FC-CLIP_zero_shot_r50.yaml
+MODEL:
+  MASK_FORMER:
+    TEST:
+      TASK: 'vps'
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_panoptic',]
+  TEST: ("panoVSPW_vps_video_val_ov",)
+
+OUTPUT_DIR: './output/R50/minvis_zero_shot_vipseg'

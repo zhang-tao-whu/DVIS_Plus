@@ -1,0 +1,14 @@
+_BASE_: ../../DVIS_Online_supervised_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_online_OV"
+  MASK_FORMER:
+    TRANSFORMER_DECODER_NAME: "VideoMultiScaleMaskedTransformerDecoder_dvis_OV"
+  TRACKER:
+    NOISE_MODE: "wa"
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ytvis_2021_val_ov",)
+  TEST2TRAIN: ["ytvis_2021_train_ov",]
+
+OUTPUT_DIR: './online_supervised_ytvis21'

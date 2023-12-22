@@ -1,0 +1,21 @@
+_BASE_: DVIS_Plus_Online_R50.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_Plus_offline"
+  REFINER:
+    USE_CL: True
+SOLVER:
+  IMS_PER_BATCH: 8
+  STEPS: (14000,)
+  MAX_ITER: 20000
+
+INPUT:
+  SAMPLING_FRAME_NUM: 21
+  SAMPLING_FRAME_RANGE: 10
+  REVERSE_AGU: True
+  CROP:
+    ENABLED: True
+  PSEUDO:
+    CROP:
+      ENABLED: True
+
+OUTPUT_DIR: './output_DVIS_Plus_Offline_R50_VSPW'

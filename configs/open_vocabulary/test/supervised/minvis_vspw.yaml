@@ -1,0 +1,12 @@
+_BASE_: ../../FC-CLIP_supervised_convnextl.yaml
+MODEL:
+  MASK_FORMER:
+    TEST:
+      TASK: 'vss'
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_semantic',]
+  TEST: ("VSPW_vss_video_val_ov",)
+  TEST2TRAIN: ["panoVSPW_vps_video_train_ov",]
+
+OUTPUT_DIR: './minvis_supervised_vspw'

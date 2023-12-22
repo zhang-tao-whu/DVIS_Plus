@@ -1,0 +1,21 @@
+_BASE_: ../../DVIS_Offline_zero_shot_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_offline_OV"
+  MASK_FORMER:
+    TEST:
+      TASK: 'vps'
+SOLVER:
+  IMS_PER_BATCH: 8
+  STEPS: (28000,)
+  MAX_ITER: 40000
+
+INPUT:
+  SAMPLING_FRAME_NUM: 11
+  SAMPLING_FRAME_RANGE: 5
+  REVERSE_AGU: True
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_panoptic',]
+  TEST: ("panoVSPW_vps_video_val_ov",)
+
+OUTPUT_DIR: './output_Offline_vipseg'

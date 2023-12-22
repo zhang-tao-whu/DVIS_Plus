@@ -1,0 +1,13 @@
+_BASE_: ../../DVIS_Offline_supervised_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_offline_OV"
+  MASK_FORMER:
+    TEST:
+      MAX_NUM: 20
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ovis_val_ov",)
+  TEST2TRAIN: ["ovis_train_ov",]
+
+OUTPUT_DIR: './offline_supervised_ovis'

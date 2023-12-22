@@ -1,0 +1,41 @@
+0:invalid_class_id
+1:airplane,aeroplane,aircraft,plane,jet
+2:bear,grizzly bear,teddy bear,bruin,ursine,grizzly
+3:bird,avian,fowl,birds
+4:boat,boats,ship,vessel,craft
+5:car,cars,automobile,vehicle,sedan,saloon car,cruiser,compact,coupe
+6:cat,cats,tomcat,kitty
+7:cow,bull
+8:deer,buck,doe,hart
+9:dog,canine,puppy,hound,mutt,hound,pooch,fido,doggy
+10:duck,drake,mallard
+11:earless_seal,earless seal,seal
+12:elephant
+13:fish,piscine
+14:flying_disc,flying disc,frisbee,flying saucer
+15:fox,vixen,reynard
+16:frog,toad
+17:giant_panda,panda,ailuropoda melanoleuca,panda bear
+18:giraffe,camelopard,longneck
+19:horse,equine,steed
+20:leopard,panther,jaguar
+21:lizard,saurian,iguana,gecko
+22:monkey,monkeys
+23:motorbike,motorcycle,motorcycles
+24:mouse,rat,murine
+25:parrot,macaw,cockatoo,lovebird,budgie
+26:person,child,girl,boy,woman,man,people,children,girls,boys,women,men,lady,guy,ladies,guys,clothes
+27:rabbit,bunny,hare,cony
+28:shark,selachimorpha,greatwhite
+29:skateboard
+30:snake,serpent,viper,cobra,adder,anaconda,python,boa,asp,rattlesnake
+31:snowboard
+32:squirrel
+33:surfboard
+34:tennis_racket,tennis racket,racquet
+35:tiger
+36:train,locomotive
+37:truck,lorry,hgv
+38:turtle,tortoise,terrapin,chelonian
+39:whale,cetacean,leviathan
+40:zebra,stripedhorse

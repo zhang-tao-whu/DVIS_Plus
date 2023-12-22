@@ -1,0 +1,8 @@
+_BASE_: ../../FC-CLIP_zero_shot_convnextl.yaml
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ytvis_2019_val_ov",)
+  TEST2TRAIN: ["ytvis_2019_train_ov",]
+
+OUTPUT_DIR: './minvis_zero_shot_ytvis19_ceonvnextl'

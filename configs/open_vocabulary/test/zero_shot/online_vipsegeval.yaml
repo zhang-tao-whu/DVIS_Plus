@@ -1,0 +1,24 @@
+_BASE_: ../../DVIS_Online_zero_shot_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_online_OV"
+  MASK_FORMER:
+    TRANSFORMER_DECODER_NAME: "VideoMultiScaleMaskedTransformerDecoder_dvis_OV"
+    TEST:
+      TASK: 'vps'
+  TRACKER:
+    NOISE_MODE: "wa"
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  STEPS: (28000,)
+  MAX_ITER: 40000
+
+INPUT:
+  SAMPLING_FRAME_NUM: 5
+  SAMPLING_FRAME_RANGE: 2
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_panoptic',]
+  TEST: ("panoVSPW_vps_video_val_ov",)
+
+OUTPUT_DIR: './output_Online_vipseg'

@@ -1,0 +1,7 @@
+_BASE_: ../../../R50/FC-CLIP_zero_shot_r50.yaml
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ytvis_2019_val_ov",)
+
+OUTPUT_DIR: './output/R50/minvis_zero_shot_ytvis19'

@@ -1,0 +1,26 @@
+0:invalid_class_id
+1:person,child,girl,boy,woman,man,people,children,girls,boys,women,men,lady,guy,ladies,guys,clothes
+2:bird,avian,fowl,birds
+3:cat,cats,tomcat,kitty
+4:dog,canine,puppy,hound,mutt,hound,pooch,fido,doggy
+5:horse,equine,steed
+6:sheep,lamb,ewe,ram
+7:cow,bull
+8:elephant
+9:bear,grizzly bear,teddy bear,bruin,ursine,grizzly
+10:zebra,stripedhorse
+11:giraffe,giraffes,camelopard,longneck
+12:poultry,domestic birds,feathered livestock,fowl livestock,duck,chicken,goose
+13:giant_panda,panda,ailuropoda melanoleuca,panda bear
+14:lizard,saurian,iguana,gecko
+15:parrot,macaw,cockatoo,lovebird,budgie
+16:monkey,monkeys
+17:rabbit,bunny,hare,cony
+18:tiger
+19:fish,piscine
+20:turtle,tortoise,terrapin,chelonian
+21:bicycle,bike,bicycles,bikes
+22:motorcycle,motorbike,motorcycles
+23:airplane,aeroplane,plane,jet
+24:boat,vessel,craft,ship
+25:vehicle,car,cars,automobile,sedan,saloon car,cruiser,compact,coupe

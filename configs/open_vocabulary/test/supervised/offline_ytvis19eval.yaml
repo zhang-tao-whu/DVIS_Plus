@@ -1,0 +1,10 @@
+_BASE_: ../../DVIS_Offline_supervised_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_offline_OV"
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ytvis_2019_val_ov",)
+  TEST2TRAIN: ["ytvis_2019_train_ov",]
+
+OUTPUT_DIR: './offline_supervised_ytvis19'

@@ -1,0 +1,9 @@
+_BASE_: ../DVIS_Online_supervised_convnextl.yaml
+MODEL:
+  FC_CLIP:
+    CLIP_MODEL_NAME: "RN50"
+    CLIP_PRETRAINED_WEIGHTS: "openai"
+    EMBED_DIM: 1024
+    ENSEMBLE_ON_VALID_MASK: True
+
+OUTPUT_DIR: './DVIS_Online_supervised_R50'

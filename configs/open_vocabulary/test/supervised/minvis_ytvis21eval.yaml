@@ -1,0 +1,8 @@
+_BASE_: ../../FC-CLIP_supervised_convnextl.yaml
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ytvis_2021_val_ov",)
+  TEST2TRAIN: ["ytvis_2021_train_ov",]
+
+OUTPUT_DIR: './minvis_supervised_ytvis21'

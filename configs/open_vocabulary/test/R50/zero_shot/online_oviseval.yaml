@@ -1,0 +1,11 @@
+_BASE_: ../../../R50/DVIS_Online_zero_shot_r50.yaml
+MODEL:
+  MASK_FORMER:
+    TEST:
+      MAX_NUM: 20
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ovis_val_ov",)
+
+OUTPUT_DIR: './output/R50/online_zero_shot_ovis_R50'

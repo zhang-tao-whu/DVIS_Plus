@@ -1,0 +1,11 @@
+cython
+scipy==1.5.4
+matplotlib==3.3.4
+shapely
+timm
+h5py
+submitit
+scikit-image
+einops
+opencv-python-headless
+open_clip_torch

@@ -1,0 +1,18 @@
+_BASE_: FC-CLIP_zero_shot_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_online_OV"
+  MASK_FORMER:
+    TRANSFORMER_DECODER_NAME: "VideoMultiScaleMaskedTransformerDecoder_dvis_OV"
+  TRACKER:
+    NOISE_MODE: "wa"
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  STEPS: (28000,)
+  MAX_ITER: 40000
+
+INPUT:
+  SAMPLING_FRAME_NUM: 5
+  SAMPLING_FRAME_RANGE: 2
+
+OUTPUT_DIR: './output_OV_DVIS_Online_zero_shot_convnextl'

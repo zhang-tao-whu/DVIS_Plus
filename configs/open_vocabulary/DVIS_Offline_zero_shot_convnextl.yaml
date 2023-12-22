@@ -1,0 +1,15 @@
+_BASE_: DVIS_Online_zero_shot_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_offline_OV"
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  STEPS: (28000,)
+  MAX_ITER: 40000
+
+INPUT:
+  SAMPLING_FRAME_NUM: 11
+  SAMPLING_FRAME_RANGE: 5
+  REVERSE_AGU: True
+
+OUTPUT_DIR: './output_OV_DVIS_Offline_zero_shot_convnextl'

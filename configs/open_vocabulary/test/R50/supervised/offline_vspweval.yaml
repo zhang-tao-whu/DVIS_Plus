@@ -1,0 +1,12 @@
+_BASE_: ../../../R50/DVIS_Offline_supervised_r50.yaml
+MODEL:
+  MASK_FORMER:
+    TEST:
+      TASK: 'vss'
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_semantic',]
+  TEST: ("VSPW_vss_video_val_ov",)
+  TEST2TRAIN: ["panoVSPW_vps_video_train_ov",]
+
+OUTPUT_DIR: './output/R50/offline_supervised_vspw_R50'

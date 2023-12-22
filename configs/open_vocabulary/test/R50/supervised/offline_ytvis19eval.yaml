@@ -1,0 +1,8 @@
+_BASE_: ../../../R50/DVIS_Offline_supervised_r50.yaml
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ytvis_2019_val_ov",)
+  TEST2TRAIN: ["ytvis_2019_train_ov",]
+
+OUTPUT_DIR: './output/R50/offline_supervised_ytvis19_R50'

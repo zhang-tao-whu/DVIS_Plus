@@ -1,0 +1,29 @@
+_BASE_: FC-CLIP_supervised_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_online_OV"
+  MASK_FORMER:
+    TRANSFORMER_DECODER_NAME: "VideoMultiScaleMaskedTransformerDecoder_dvis_OV"
+  TRACKER:
+    NOISE_MODE: "wa"
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  STEPS: (28000,)
+  MAX_ITER: 40000
+
+INPUT:
+  SAMPLING_FRAME_NUM: 5
+  SAMPLING_FRAME_RANGE: 2
+
+DATASETS:
+  DATASET_NEED_MAP: [False, False, False, False, False]
+  DATASET_TYPE: ['image_panoptic', 'video_instance', 'video_instance', 'video_instance', 'video_panoptic']
+  DATASET_TYPE_TEST: ['video_instance',]
+  # The categories of all datasets will be mapped to the categories of the last dataset
+  DATASET_RATIO: [0.2, 0.1, 0.1, 0.4, 0.2]
+  TRAIN: ("coco_panoptic_video_ov", "ytvis_2019_train_ov", "ytvis_2021_train_ov", "ovis_train_ov", "panoVSPW_vps_video_train_ov")
+  TEST: ("ytvis_2019_train_ov",)
+  #TEST: ("ovis_train_ov",)
+  TEST2TRAIN: ["ytvis_2019_train_ov",]
+
+OUTPUT_DIR: './output_OV_DVIS_Online_supervised_convnextl'

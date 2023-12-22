@@ -1,0 +1,13 @@
+_BASE_: ../../DVIS_Offline_supervised_convnextl.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_offline_OV"
+  MASK_FORMER:
+    TEST:
+      TASK: 'vps'
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_panoptic',]
+  TEST: ("panoVSPW_vps_video_val_ov",)
+  TEST2TRAIN: ["panoVSPW_vps_video_train_ov",]
+
+OUTPUT_DIR: './offline_supervised_vipseg'

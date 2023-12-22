@@ -1,0 +1,7 @@
+_BASE_: ../../../R50/DVIS_Offline_zero_shot_r50.yaml
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ytvis_2021_val_ov",)
+
+OUTPUT_DIR: './output/R50/offline_zero_shot_ytvis21_R50'

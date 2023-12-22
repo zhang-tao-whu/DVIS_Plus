@@ -1,0 +1,12 @@
+_BASE_: ../../../R50/FC-CLIP_supervised_r50.yaml
+MODEL:
+  MASK_FORMER:
+    TEST:
+      TASK: 'vps'
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_panoptic',]
+  TEST: ("panoVSPW_vps_video_val_ov",)
+  TEST2TRAIN: ["panoVSPW_vps_video_train_ov",]
+
+OUTPUT_DIR: './output/R50/minvis_supervised_vipseg'

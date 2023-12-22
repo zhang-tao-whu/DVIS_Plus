@@ -1,0 +1,26 @@
+_BASE_: MinVIS_R50.yaml
+MODEL:
+  META_ARCHITECTURE: "DVIS_Plus_online"
+  MASK_FORMER:
+    TRANSFORMER_DECODER_NAME: "VideoMultiScaleMaskedTransformerDecoder_dvisPlus"
+    REID_BRANCH: True
+  TRACKER:
+    NOISE_MODE: "wa"
+    NOISE_RATIO: 0.5
+    USE_CL: False
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  STEPS: (14000,)
+  MAX_ITER: 20000
+
+INPUT:
+  SAMPLING_FRAME_NUM: 5
+  SAMPLING_FRAME_RANGE: 2
+  CROP:
+    ENABLED: False
+  PSEUDO:
+    CROP:
+      ENABLED: False
+
+OUTPUT_DIR: './output_DVIS_Plus_Online_R50_VIPSeg'

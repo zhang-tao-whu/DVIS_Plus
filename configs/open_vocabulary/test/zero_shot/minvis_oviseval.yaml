@@ -1,0 +1,12 @@
+_BASE_: ../../FC-CLIP_zero_shot_convnextl.yaml
+MODEL:
+  MASK_FORMER:
+    TEST:
+      MAX_NUM: 20
+
+DATASETS:
+  DATASET_TYPE_TEST: ['video_instance',]
+  TEST: ("ovis_val_ov",)
+  TEST2TRAIN: ["ovis_train_ov",]
+
+OUTPUT_DIR: './minvis_zero_shot_ovis_ceonvnextl'

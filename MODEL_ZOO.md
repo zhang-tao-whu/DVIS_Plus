@@ -7,6 +7,8 @@ The "Config" column contains a link to the config file.
 
 ## Weights
 
+The weights for all the following can be found on (HuggingFace)[https://huggingface.co/zhangtao-whu/DVIS_Plus/tree/main/DVIS%2B%2B], and you can also download them from there.
+
 ### Pretrained segmenter
 <table><tbody>
 <!-- START TABLE -->

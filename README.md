@@ -20,6 +20,7 @@ Yuan Zhang, Pengfei Wan, Zhongyuan Wang and
 </div>
 
 ## News
+- DVIS-DAQ achieves 57.1 AP on the OVIS dataset and also sets a new SOTA performance on YTVIS19/21 and VIPSeg. The code will be released in this repository. The paper is available at [DVIS-DAQ: Improving Video Segmentation via Dynamic Anchor Queries](https://arxiv.org/pdf/2404.00086.pdf) and the project page can be found in [project page](https://zhang-tao-whu.github.io/projects/DVIS_DAQ/).
 - DVIS and DVIS++ achieved **1st place** in the VPS Track of the PVUW challenge at CVPR 2023. `2023.5.25`
 - DVIS and DVIS++ achieved **1st place** in the VIS Track of the 5th LSVOS challenge at ICCV 2023. `2023.8.15`
 
@@ -67,6 +68,13 @@ Trained models are available for download in the [DVIS++ Model Zoo](MODEL_ZOO.md
   author={Tao Zhang and Xingye Tian and Yikang Zhou and Shunping Ji and Xuebo Wang and Xin Tao and Yuan Zhang and Pengfei Wan and Zhongyuan Wang and Yu Wu},
   journal={arXiv preprint arXiv:2312.13305},
   year={2023},
+}
+
+@article{dvisdaq,
+  title={DVIS-DAQ: Improving Video Segmentation via Dynamic Anchor Queries}, 
+  author={Yikang Zhou and Tao Zhang and Shunping Ji and Shuicheng Yan and Xiangtai Li},
+  journal={arXiv},
+  year={2024},
 }
 ```
 

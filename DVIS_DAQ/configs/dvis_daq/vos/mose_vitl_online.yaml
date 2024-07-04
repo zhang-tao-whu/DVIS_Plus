@@ -1,0 +1,20 @@
+_BASE_: ../ovis/vit_adapter/DAQ_Online_VitAdapterL.yaml
+MODEL:
+  MASK_FORMER:
+    TEST:
+      MAX_NUM: 20
+      TASK: 'vos'
+
+SOLVER:
+  IMS_PER_BATCH: 2
+
+DATASETS:
+  DATASET_RATIO: [1.0, 1.0]
+  DATASET_NEED_MAP: [True, False, ]
+  DATASET_TYPE: ['image_instance', 'video_instance', ]
+  DATASET_TYPE_TEST: ['vos', ]
+  # The categories of all datasets will be mapped to the categories of the last dataset
+  TRAIN: ("coco2ovis_train", "ovis_train")
+  TEST: ("sot_mose_val",)
+
+OUTPUT_DIR: './output_VITL_Online_MOSE'

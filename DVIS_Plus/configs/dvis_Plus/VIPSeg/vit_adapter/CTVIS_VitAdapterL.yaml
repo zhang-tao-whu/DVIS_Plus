@@ -1,0 +1,30 @@
+_BASE_: ../CTVIS_r50.yaml
+MODEL:
+  BACKBONE:
+    NAME: "D2VitAdapterDinoV2"
+  VIT_ADAPTER:
+    FINETUNE: False
+    NAME: 'vitl'
+    VIT_WEIGHT: './work_dirs/dinov2_vitl14_pretrain_.pth'
+    FREEZE_VIT: True
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+  MASK_FORMER:
+    NUM_OBJECT_QUERIES: 200
+  CL_PLUGIN:
+    NUM_NEGATIVES: 199
+SOLVER:
+  IMS_PER_BATCH: 16
+  STEPS: (14000, 18000)
+  MAX_ITER: 20000
+
+INPUT:
+  SAMPLING_FRAME_NUM: 4
+  SAMPLING_FRAME_RANGE: 8
+  MIN_SIZE_TEST: 720
+  CROP:
+    ENABLED: False
+  PSEUDO:
+    CROP:
+      ENABLED: False
+OUTPUT_DIR: './output_CTVIS_VitAdapterL_VIPSeg'

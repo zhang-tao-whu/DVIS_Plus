@@ -1,0 +1,32 @@
+_BASE_: MinVIS_R50.yaml
+MODEL:
+  META_ARCHITECTURE: "CTMinVIS"
+  MASK_FORMER:
+    TRANSFORMER_DECODER_NAME: "VideoMultiScaleMaskedTransformerDecoder_dvisPlus"
+    REID_BRANCH: True
+
+SOLVER:
+  IMS_PER_BATCH: 8
+  BASE_LR: 0.00005
+  STEPS: (12000, 24000)
+  MAX_ITER: 32000
+  CHECKPOINT_PERIOD: 4000
+
+INPUT:
+  SAMPLING_FRAME_RANGE: 15
+  SAMPLING_FRAME_NUM: 10
+
+DATASETS:
+  DATASET_RATIO: [1.0, 1.0]
+  DATASET_NEED_MAP: [True, False, ]
+  DATASET_TYPE: ['image_instance', 'video_instance', ]
+  DATASET_TYPE_TEST: ['video_instance', ]
+  # The categories of all datasets will be mapped to the categories of the last dataset
+  TRAIN: ("coco2ovis_train", "ovis_rebuttal_train")
+  TEST: ("ovis_rebuttal_val",)
+
+DATALOADER:
+  FILTER_EMPTY_ANNOTATIONS: False
+  NUM_WORKERS: 8
+
+OUTPUT_DIR: './output_CTVIS_R50_OVIS_rebuttal'
